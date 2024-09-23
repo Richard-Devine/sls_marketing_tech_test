@@ -1,0 +1,40 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy-footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+
+    img {
+        height: var(--font-size-small);
+    }
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    background: var(--black);
+    color: var(--white);
+}
+
+.logo-container {
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    height: 50%
+}
+
+.copyright-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%
+}

@@ -1,0 +1,44 @@
+.error-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+    background: var(--black);
+    z-index: 100;
+}
+
+.error-modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 44%;
+    left: 50%;
+    height: 271px;
+    width: var(--width-default);
+    transform: translate(-50%, -66%);
+    color: var(--black);
+    background: var(--white);
+    z-index: 101;
+}
+
+.cross-image {
+    position: fixed;
+    top: -15%;
+    left: 92%;
+    height: 26px;
+    cursor: pointer;
+}
+
+.ok-button {
+    color: var(--white);
+    background: var(--red);
+    border-radius: 0;
+    width: 106px;
+    height: 49px;
+    cursor: pointer;
+}

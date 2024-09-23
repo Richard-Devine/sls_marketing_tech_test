@@ -1,0 +1,74 @@
+.navigation-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-top: 62px;
+    width: var(--width-default);
+}
+
+.active {
+    border: 1px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.active:hover {
+    background: var(--orange-dark);
+    color: var(--white);
+}
+
+.selected {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.selected.next-arrow {
+    img {
+        content: url("../../icons/arrow-right-white.svg");
+    }
+}
+
+.active.back-arrow:hover {
+    img {
+        content: url("../../icons/arrow-left-white.svg");
+    }
+}
+
+.active.next-arrow:hover {
+    img {
+        content: url("../../icons/arrow-right-white.svg");
+    }
+}
+
+.inactive {
+    border: 1px solid var(--grey-semi-light);
+    color: var(--grey-semi-light);
+    cursor: default;
+}
+
+.inactive.next-arrow {
+    img {
+        content: url("../../icons/arrow-right-grey.svg");
+    }
+}
+
+.inactive.back-arrow img {
+    content: url("../../icons/arrow-left-grey.svg");
+}
+
+.selected {
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.selected.next-arrow {
+    img {
+        content: url("../../icons/arrow-right-white.svg");
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}

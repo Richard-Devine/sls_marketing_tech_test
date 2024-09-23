@@ -1,0 +1,30 @@
+.cover-for-container {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cover-for-button {
+    border: 1px solid var(--black);
+    background: var(--yellow);
+    width: var(--width-default);
+    height: 80px;
+}
+
+.cover-for-button:hover,
+.cover-for-button.active {
+    color: var(--white);
+    background: var(--gradient-default);
+}
+
+.person-button:hover img,
+.person-button.active img {
+    content: url("../../icons/person-white.svg");
+}
+
+.people-button:hover img,
+.people-button.active img {
+    content: url("../../icons/people-white.svg");
+}

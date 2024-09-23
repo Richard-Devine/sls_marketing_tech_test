@@ -1,0 +1,23 @@
+.identity-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: var(--width-default);
+    gap: 32px;
+    margin-top: 32px;
+    color: var(--blue-dark)
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+.title-select {
+    display: flex;
+    justify-content: flex-start;
+    width: 141px;
+    height: 56px;
+    font-weight: var(--font-weight-default);
+    font-size: var(--font-size-default);
+}

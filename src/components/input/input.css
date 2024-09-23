@@ -1,0 +1,74 @@
+.text {
+    width: calc(var(--width-default) - 20px);
+    padding: 10px;
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-default);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    background: var(--white);
+    height: 64px;
+}
+
+.text-focused {
+    background: var(--blue-light);
+}
+
+.text:focus {
+    background: var(--blue-light);
+    border: 1px solid var(--blue)
+}
+
+.text::placeholder {
+    color: var(--grey-semi-dark);
+}
+
+.text-error {
+    background: var(--pink);
+    border: 1px solid var(--red)
+}
+
+.text-error-message {
+    color: var(--red);
+    margin-top: 5px;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-default);
+}
+
+.checkbox-custom {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-default);
+    color: var(--grey-dark);
+}
+
+.checkbox-hidden {
+    opacity: 0;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+
+.checkbox-checkmark {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 2px solid var(--blue);
+    border-radius: var(--border-radius-default);
+    background-color: var(--blue-light);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.checkbox-checkmark img {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    height: 15px;
+}
+
+.checkbox-checked {
+    background-color: var(--blue);
+}

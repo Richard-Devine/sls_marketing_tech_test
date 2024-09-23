@@ -1,0 +1,22 @@
+.cover-amount-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.cover-amount-select {
+    display: flex;
+    justify-content: center;
+    width: var(--width-default);
+    height: 80px;
+    font-weight: var(--font-weight-default);
+    font-size: var(--font-size-h3);
+}
+
+.cover-amount-container select {
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 16px #4AACEE4D;
+}

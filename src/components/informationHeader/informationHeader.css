@@ -1,0 +1,19 @@
+.information-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: calc(100% - 148px);
+    min-width: calc(var(--width-default) - 32px);
+    padding: 16px;
+    margin: 16px 0;
+    background: var(--blue-dark);
+    color: var(--white);
+    border-radius: var(--border-radius-default);
+    font-size: var(--font-weight-default);
+    font-weight: var(--font-weight-bold);
+
+    img {
+        height: 31px;
+    }
+}

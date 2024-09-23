@@ -1,0 +1,10 @@
+.header-container {
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 50%;
+    }
+}

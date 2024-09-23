@@ -1,0 +1,23 @@
+.submitted-container {
+    display: flex;
+    flex-direction: column;
+    width: var(--width-default);
+    text-align: center;
+}
+
+.submitted-header {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 8px;
+    color: var(--green);
+    width: 325px;
+}
+
+.submitted-message {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-default);
+    margin-top: 0;
+    color: var(--black);
+    padding: 5px;
+    width: calc(322px - 10px);
+}

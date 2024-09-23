@@ -1,0 +1,38 @@
+.select-box-container select {
+    appearance: none; /* Removes the default arrow in WebKit/Blink browsers */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-weight: inherit;
+    font-size: inherit;
+    position: relative;
+}
+
+.pre-selected select {
+    background: var(--blue-light)
+}
+
+.select-box-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    pointer-events: none;
+}
+
+.select-option {
+    font-size: 22px;
+    font-weight: 400;
+}

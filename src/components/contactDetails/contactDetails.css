@@ -1,0 +1,46 @@
+.contact-details-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 24px;
+    color: var(--blue-dark);
+
+    h1 {
+        text-align: center;
+        margin-top: 49px;
+        color: var(--black);
+    }
+}
+
+.checkbox {
+    background: var(--blue-light);
+    border: 1px solid var(--blue);
+}
+
+.get-quotes-button {
+    background: var(--orange);
+    color: var(--white);
+    width: var(--width-default);
+    height: 80px;
+    cursor: pointer;
+}
+
+.inactive {
+    background: var(--white);
+    border: 1px solid var(--grey-semi-light);
+    color: var(--grey-semi-light);
+    cursor: default;
+}
+
+.t-and-c-text {
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    width: calc(var(--width-default) - 20px);
+    color: var(--grey-dark);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-size-default);
+}
+
+
+

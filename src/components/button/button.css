@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 32px;
+    width: 92px;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.right {
+    flex-direction: row;
+}
+

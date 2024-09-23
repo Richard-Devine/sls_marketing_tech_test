@@ -1,0 +1,31 @@
+.broker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 24px;
+    border: 1px solid var(--grey-semi-light);
+    width: 100%;
+}
+
+.broker-logos {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.highlight {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 640px) {
+    .broker-logos {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .broker-logos {
+        width: 90%;
+    }
+}
