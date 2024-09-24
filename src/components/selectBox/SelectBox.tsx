@@ -1,5 +1,6 @@
 import DownArrowBlue from '../../icons/arrow-down-blue.svg'
 import './selectBox.css'
+import React from "react";
 
 interface Props {
     options: string[];
@@ -34,4 +35,4 @@ function SelectBox(
     )
 }
 
-export default SelectBox;
+export default React.memo(SelectBox);

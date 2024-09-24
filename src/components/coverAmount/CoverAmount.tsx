@@ -1,8 +1,8 @@
 import NavigationButtons from "../navigation-buttons/NavigationButtons";
 import {useState} from "react";
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 import SelectBox from "../selectBox/SelectBox";
-import './coverAmount.css'
+import './coverAmount.css';
 
 interface Props {
     setCoverFor: (coverFor: string) => void;

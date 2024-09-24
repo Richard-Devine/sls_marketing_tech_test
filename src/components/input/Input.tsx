@@ -1,5 +1,5 @@
 import './input.css'
-import {useState} from "react";
+import React, {useState} from "react";
 import Tick from "../../icons/tick.svg";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
     checkboxLabel?: string;
 }
 
-function Input(
+function Input (
     {
         saveCheckboxValue = () => null,
         saveTextInputValue = () => null,
@@ -93,4 +93,4 @@ function Input(
     )
 }
 
-export default Input;
+export default React.memo(Input);

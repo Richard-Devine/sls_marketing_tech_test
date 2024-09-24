@@ -1,7 +1,7 @@
 import React from "react";
 import '@testing-library/jest-dom';
 import {fireEvent, render, screen} from '@testing-library/react';
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 import userEvent from "@testing-library/user-event";
 import CoverAmount from "./CoverAmount";
 
@@ -19,7 +19,7 @@ jest.mock('../selectBox/SelectBox', () => (props: any) =>
         <option value={'£160,000'}>{'£160,000'}</option>
     </select>);
 
-jest.mock('../../QuoteContext', () => ({
+jest.mock('../../contexts/QuoteContext', () => ({
     useQuote: jest.fn(),
 }));
 

@@ -2,17 +2,18 @@
 
 ## Notes
 
-Followed the design spec as best as I could, there were some components missing from those supplied which I have 
-stripped out of the designs. 
+I have followed the design specification as best as I possibly could. I have unit tested the components with 100% 
+code coverage.
 
-Not all the typography matched up so I have gone with what was in the designs rather 
-than change it to the closest matched of the predefined typographies. 
+Should I have more time I would like to have done integration and UI tests along with the unit tests
 
-I have written unit tests with 100% code coverage, 
-I have not done any integration or UI tests as I unfortunately don't have the time.
+A few points to note:
 
+- Not all the design spec Typography matches the given Typography, in this case I have used the font and weight in the design spec rather than best match with the 5 given Typographies
+- Not all the required images for the design spec where given in the icons section, I have stripped out the missing ones I have noticed from the spec and used them.
+- Sometimes some of the broker images have a faint thin black lines around them, this appears to be a problem with the actual images when I have exported them from Figma
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) click [here](https://github.com/facebook/create-react-app) to find out more.
 
 ## Available Scripts
 
@@ -23,32 +24,8 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
+Click [here](https://create-react-app.dev/docs/running-tests/) to find out more about running tests
 

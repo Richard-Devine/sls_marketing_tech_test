@@ -1,9 +1,9 @@
 import Input from "../input/Input";
 import Button from "../button/Button";
 import NavigationButtons from "../navigation-buttons/NavigationButtons";
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 import {useState} from "react";
-import './contactDetails.css'
+import './contactDetails.css';
 
 interface Props {
     setIdentity: (value: string) => void;

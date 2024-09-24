@@ -1,5 +1,5 @@
-import './button.css'
-import {JSX} from "react";
+import './button.css';
+import React, {JSX} from "react";
 
 interface ButtonProps {
     title: string;
@@ -29,4 +29,4 @@ function Button(
     )
 }
 
-export default Button;
+export default React.memo(Button);

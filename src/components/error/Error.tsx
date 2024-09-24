@@ -1,6 +1,6 @@
 import Button from "../button/Button";
-import Cross from '../../icons/cross-white.svg'
-import UnhappyFace from '../../icons/unhappy-face.svg'
+import Cross from '../../icons/cross-white.svg';
+import UnhappyFace from '../../icons/unhappy-face.svg';
 import './error.css';
 
 interface Props {

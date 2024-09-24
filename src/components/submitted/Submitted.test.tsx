@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom';
 import {render, screen} from '@testing-library/react';
 import Submitted from "./Submitted";
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 
-jest.mock('../../QuoteContext', () => ({
+jest.mock('../../contexts/QuoteContext', () => ({
     useQuote: jest.fn(),
 }));
 

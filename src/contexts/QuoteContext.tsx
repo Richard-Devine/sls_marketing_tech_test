@@ -1,5 +1,5 @@
 import React, {createContext, ReactNode, useContext, useState} from 'react';
-import Quote from './quoteClass';
+import Quote from '../models/quote';
 
 const QuoteContext = createContext<Quote | undefined>(undefined);
 

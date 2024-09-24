@@ -1,5 +1,5 @@
 import './submitted.css';
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 
 function Submitted() {
 

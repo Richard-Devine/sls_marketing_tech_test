@@ -2,6 +2,7 @@ import BlackBackArrow from '../../icons/arrow-left-black.svg'
 import BlackForwardArrow from '../../icons/arrow-right-black.svg'
 import Button from "../button/Button";
 import './navigationButtons.css'
+import React from "react";
 
 interface Props {
     backArrow: 'active' | 'inactive' | 'hidden';
@@ -40,4 +41,4 @@ function NavigationButtons(
     )
 }
 
-export default NavigationButtons
+export default React.memo(NavigationButtons);

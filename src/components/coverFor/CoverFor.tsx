@@ -1,11 +1,11 @@
-import Error from '../error/Error'
+import Error from '../error/Error';
 import Button from "../button/Button";
 import NavigationButtons from "../navigation-buttons/NavigationButtons";
 import PersonBlack from "../../icons/person-black.svg";
 import PeopleBlack from "../../icons/people-black.svg";
-import './coverFor.css'
+import './coverFor.css';
 import {useState} from "react";
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 
 
 interface Props {

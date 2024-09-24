@@ -2,7 +2,7 @@ import React from "react";
 import '@testing-library/jest-dom';
 import {fireEvent, render, screen} from '@testing-library/react';
 import ContactDetails from "./ContactDetails";
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 import userEvent from "@testing-library/user-event";
 
 
@@ -32,7 +32,7 @@ jest.mock('../button/Button', () => (props: any) => (
     </button>
 ));
 
-jest.mock('../../QuoteContext', () => ({
+jest.mock('../../contexts/QuoteContext', () => ({
     useQuote: jest.fn(),
 }));
 

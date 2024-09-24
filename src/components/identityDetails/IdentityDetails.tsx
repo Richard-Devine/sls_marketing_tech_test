@@ -2,7 +2,7 @@ import NavigationButtons from "../navigation-buttons/NavigationButtons";
 import {useEffect, useState} from "react";
 import SelectBox from "../selectBox/SelectBox";
 import Input from "../input/Input"
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 import './identityDetails.css'
 
 interface Props {

@@ -1,12 +1,12 @@
-import {useState} from "react";
+import {useMemo, useState} from "react";
 import Brokers from "../brokers/Brokers";
-import CoverFor from '../coverFor/CoverFor'
-import CoverAmount from '../coverAmount/CoverAmount'
+import CoverFor from '../coverFor/CoverFor';
+import CoverAmount from '../coverAmount/CoverAmount';
 import IdentityDetails from "../identityDetails/IdentityDetails";
 import ContactDetails from '../contactDetails/ContactDetails';
 import InformationHeader from "../informationHeader/InformationHeader";
-import Submitted from '../submitted/Submitted'
-import './form.css';
+import Submitted from '../submitted/Submitted';
+import './form.css';;
 
 
 function Form() {
@@ -29,7 +29,7 @@ function Form() {
         value ? setCurrentPage('submitted') : setCurrentPage('contactDetails')
     }
 
-    const renderPage = () => {
+    const pageView = useMemo(() => {
         switch (currentPage) {
             case 'coverFor':
                 return [<Brokers key={'brokers'}/>, <CoverFor setCoverFor={setCoverForHandler} key={'coverForPage'}/>];
@@ -46,11 +46,14 @@ function Form() {
                                         key={'contactDetails'}/>];
             case "submitted":
                 return [<Submitted key={'submitted'}/>];
+            default:
+                return [];
         }
-    };
+    }, [currentPage]);
+
     return (
         <div className={'form-container'}>
-            {renderPage()}
+            {pageView}
         </div>
     )
 }

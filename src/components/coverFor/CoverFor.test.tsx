@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import {render, screen} from '@testing-library/react';
 import CoverFor from "./CoverFor";
 import React from "react";
-import {useQuote} from "../../QuoteContext";
+import {useQuote} from "../../contexts/QuoteContext";
 import userEvent from "@testing-library/user-event";
 
 
@@ -21,7 +21,7 @@ jest.mock('../navigation-buttons/NavigationButtons', () => (props: any) =>
     </>
 );
 
-jest.mock('../../QuoteContext', () => ({
+jest.mock('../../contexts/QuoteContext', () => ({
     useQuote: jest.fn(),
 }));
 

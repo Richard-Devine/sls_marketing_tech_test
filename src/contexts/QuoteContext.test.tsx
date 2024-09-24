@@ -3,7 +3,7 @@ import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import {QuoteProvider, useQuote} from './QuoteContext';
 
-jest.mock('./quoteClass');
+jest.mock('../models/quote');
 
 const TestComponent = () => {
     const quote = useQuote();

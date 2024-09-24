@@ -1,3 +1,4 @@
+import React from "react";
 import Zurich from '../../icons/zurich-logo.svg';
 import Aig from '../../icons/aig.svg';
 import LiverpoolVictoria from '../../icons/liverpool-victoria.svg';

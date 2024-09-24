@@ -1,4 +1,4 @@
-import Quote from './quoteClass';
+import Quote from './quote';
 
 let quote: Quote;
 
